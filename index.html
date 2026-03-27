@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neonski Bricks</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1>NEON BRICKS</h1>
+    
+    <div id="glavni-prikaz">
+        <div id="igra-kontejner">
+            <div id="info-vrstica">
+                <span>Čas: <span id="cas">00:00</span></span>
+            </div>
+            
+            <div id="platno-kontejner">
+                <canvas id="canvas" width="500" height="400"></canvas>
+                
+                <div id="konec-zaslon" style="display: none;">
+                    <h2 id="konec-sporocilo"></h2>
+                    <button id="ponovno-igraj">Ponovno igraj</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="legenda-kontejner">
+            <h2>KONTROLE</h2>
+            <ul>
+                <li><strong>Premik levo:</strong> Puščica Levo ali 'A'</li>
+                <li><strong>Premik desno:</strong> Puščica Desno ali 'D'</li>
+                <li><strong>Premik z miško:</strong> Premikaj kazalec po platnu</li>
+                <hr>
+                <li><strong>Začetek igre:</strong> Levi klik na platno ali 'Enter'</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+    
+</body>
+</html>
